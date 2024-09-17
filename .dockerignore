@@ -1,0 +1,19 @@
+# Dependencies
+/node_modules
+
+# Enviroment
+.env
+
+# Production
+/dist
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Document
+README.md
+
+# Files
+public
+private

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      .link {
+        transform: translateX(-0.75em);
+        transition: transform 200ms;
+      }
+
+      .link::before {
+        content: "#";
+        display: inline-block;
+        width: 0.75em;
+
+        color: #888888;
+        opacity: 0;
+        transition: opacity 200ms;
+      }
+
+      .link:hover {
+        transform: none;
+      }
+
+      .link:hover::before {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        margin: auto;
+        background-color: #ffffff;
+        width: 500px;
+        padding: 10px;
+        /* border-top: 2px solid #e37c41; */
+      "
+    >
+      <div class="adM"></div>
+      <!-- Logo -->
+      <img height="40px" alt="" src="<%= logo_url %>">
+      <p>Kính gửi <%= candidate_name %>,</p>
+      <p>Cảm ơn bạn đã sắp xếp them dự buổi phỏng vấn và sự quan tâm đến vị trí chúng tôi tuyển dụng.</p>
+      <p>Dựa vào kết quả buổi phỏng vấn, chúng tôi rất tiếc phải thông báo rằng hiện tại bạn chưa phù hợp với vị trí chúng tôi đang tuyển dụng. </p>
+      <p>Một lần nữa, chúng tôi xin chân thành cảm ơn bạn vì sự quan tâm và tham gia của bạn. Chúc bạn may mắn trong tương lai và chúng tôi hy vọng có cơ hội gặp lại bạn.</p>
+
+      <hr style="border-top: 1px solid;" />
+      <div style="font-style: italic;">
+        <span
+          >Lưu ý: đây là email tự động vui lòng không phản hồi lại email này,
+          mọi thắc mắc xin liên hệ chăm sóc khách hàng của hệ thống</span
+        >
+        <div class="yj6qo"></div>
+        <div class="adL"></div>
+        <div class="adL"><br /></div>
+      </div>
+      <div class="adL"></div>
+      <div class="adL"></div>
+      <div class="adL"></div>
+    </div>
+  </body>
+</html>

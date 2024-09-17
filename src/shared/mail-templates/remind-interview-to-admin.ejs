@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      .link {
+        transform: translateX(-0.75em);
+        transition: transform 200ms;
+      }
+
+      .link::before {
+        content: "#";
+        display: inline-block;
+        width: 0.75em;
+
+        color: #888888;
+        opacity: 0;
+        transition: opacity 200ms;
+      }
+
+      .link:hover {
+        transform: none;
+      }
+
+      .link:hover::before {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        margin: auto;
+        background-color: #ffffff;
+        width: 500px;
+        padding: 10px;
+        /* border-top: 2px solid #e37c41; */
+      "
+    >
+      <div class="adM"></div>
+      <!-- Logo -->
+      <img height="40px" alt="" src="<%= logo_url %>">
+      <p>Alehub xin thông báo:</p>
+      <p>Ứng viên <%= candidate_name %> sẽ có buổi phỏng vấn với công ty <%= enterprise_name %> vào thời gian:</p>
+      <p>Thời gian: <%= time %></p>
+      <p>Địa điểm: <%= address %></p>
+      <p>Người phỏng vấn: <%= interviewer %></p>
+      <p>Nếu có bất kỳ câu hỏi hoặc cần sự trợ giúp vui lòng liên hệ với chúng tôi qua số điện thoại: 0981549988</p>
+      
+      <hr style="border-top: 1px solid;" />
+      <div style="font-style: italic;">
+        <span
+          >Lưu ý: đây là email tự động vui lòng không phản hồi lại email này,
+          mọi thắc mắc xin liên hệ chăm sóc khách hàng của hệ thống</span
+        >
+        <div class="yj6qo"></div>
+        <div class="adL"></div>
+        <div class="adL"><br /></div>
+      </div>
+      <div class="adL"></div>
+      <div class="adL"></div>
+      <div class="adL"></div>
+    </div>
+  </body>
+</html>

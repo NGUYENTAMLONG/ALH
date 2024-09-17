@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      .link {
+        transform: translateX(-0.75em);
+        transition: transform 200ms;
+      }
+
+      .link::before {
+        content: "#";
+        display: inline-block;
+        width: 0.75em;
+
+        color: #888888;
+        opacity: 0;
+        transition: opacity 200ms;
+      }
+
+      .link:hover {
+        transform: none;
+      }
+
+      .link:hover::before {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        margin: auto;
+        background-color: #ffffff;
+        width: 500px;
+        padding: 10px;
+        /* border-top: 2px solid #e37c41; */
+      "
+    >
+      <div class="adM"></div>
+      <!-- Logo -->
+      <img height="40px" alt="" src="<%= logo_url %>">
+      <p>Kính gửi <%= hro_name %>,</p>
+      <p><%= candidate_name %> bị xóa khỏi yêu tuyển dụng <%= recruitment_code %> bởi <%= created_name %>. Vì vậy chúng tôi đã trừ điểm vào ví hoa hồng của bạn.</p>
+      <p>Xin vui lòng kiểm tra và xác nhận lại thông tin dưới đây:</p>
+      <p>Số điểm đã trừ: <%= value %></p>
+      <p>Tổng điểm ví: <%= point %></p>
+      <p>Ngày giao dịch: <%= time %></p>
+      <p>Nội dung: <%= note %></p>
+      <p>Theo dõi chi tiết lịch sử giao dịch ví trên hệ thống của Alehub: <a href="<%= webLoginAdmin %>/revenue" target="_blank"><%= webLoginAdmin %>/revenue</a>.</p>
+      <p>Nếu có bất kỳ câu hỏi hoặc cần sự trợ giúp vui lòng liên hệ với chúng tôi qua email: manhnc@winds.vn</p>
+      <hr style="border-top: 1px solid;" />
+      <div style="font-style: italic;">
+        <span
+          >Lưu ý: đây là email tự động vui lòng không phản hồi lại email này,
+          mọi thắc mắc xin liên hệ chăm sóc khách hàng của hệ thống</span
+        >
+        <div class="yj6qo"></div>
+        <div class="adL"></div>
+        <div class="adL"><br /></div>
+      </div>
+      <div class="adL"></div>
+      <div class="adL"></div>
+      <div class="adL"></div>
+    </div>
+  </body>
+</html>

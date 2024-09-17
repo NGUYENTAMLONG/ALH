@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  api:
+    env_file:
+      - .env
+    build:
+      context: .
+    ports:
+      - ${PORT}:${PORT}
+    volumes:
+      - ./public:/app/uploads
+      - ./logs:/app/logs
+      - ./private:/app/private
+    networks:
+      - overlay
+    restart: always
+networks:
+  overlay:

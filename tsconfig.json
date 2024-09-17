@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@enterprise/*": ["./src/v1/enterprise/*"],
+      "@shared/*": ["./src/shared"],
+      "@decorators/*": ["./src/shared/decorators/*"],
+      "@enums/*": ["./src/shared/enums/*"],
+      "@fake-data/*": ["./src/shared/fake-data/*"],
+      "@filters/*": ["./src/shared/filters/*"],
+      "@guards/*": ["./src/shared/guards/*"],
+      "@mail-templates/*": ["./src/shared/mail-templates/*"],
+      "@middlewares/*": ["./src/shared/middlewares/*"],
+      "@models/*": ["./src/shared/models/*"],
+      "@repositories/*": ["./src/shared/repositories/*"],
+      "@services/*": ["./src/shared/services/*"],
+      "@utils/*": ["./src/shared/utils/*"],
+      "@auth/*": ["./src/v1/auth/*"],
+      "@user/*": ["./src/v1/user/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
